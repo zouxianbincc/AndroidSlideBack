@@ -1,6 +1,7 @@
 
 ## AndroidSlideBack
 这个Activity实现了可以滑动左侧边缘退出Activity的功能，类似iOS的交互行为
+![mahua](https://github.com/zouxianbincc/AndroidSlideBack/blob/master/images/device-2017-06-20-145919.png)
 
 
 
