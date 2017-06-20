@@ -25,7 +25,7 @@ allprojects {
 Add the dependency
 ```javascript
 dependencies {
-    	compile 'com.github.User:Repo:Tag'
+	        compile 'com.github.zouxianbincc:AndroidSlideBack:v1.0.0'
 	}
 ```
 ##注意
