@@ -1,10 +1,10 @@
 
-##AndroidSlideBack
+###AndroidSlideBack
 这个Activity实现了可以滑动左侧边缘退出Activity的功能，类似iOS的交互行为
 
 
 
-##SlideBack有哪些功能？
+###SlideBack有哪些功能？
 
 * setSlideable(boolean) 方法来设置是否支持滑动
     
@@ -28,7 +28,7 @@ dependencies {
 	        compile 'com.github.zouxianbincc:AndroidSlideBack:v1.0.0'
 	}
 ```
-##注意
+###注意
 在Activity实现中。setContentView时，只能传一个View,不能传一个layoutResID。
 因为 SlideBackAppCompatActivity重写的setContentView(View view);
 所以  setContentView(R.layout.activity_main2) 时，左滑返回是无效的
