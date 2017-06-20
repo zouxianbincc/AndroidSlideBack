@@ -16,7 +16,9 @@ public class Main3Activity extends BaseActivity {
 
 
 
-
+        //要想能左滑返回上一个Activity
+        //设置setContentView必须是setContentView(view)
+        //不能传一个layoutID
         setContentView(LayoutInflater.from(this).inflate(R.layout.activity_main3,null,false));
 
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
