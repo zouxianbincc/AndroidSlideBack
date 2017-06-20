@@ -1,10 +1,10 @@
 
-###AndroidSlideBack
+## AndroidSlideBack
 这个Activity实现了可以滑动左侧边缘退出Activity的功能，类似iOS的交互行为
 
 
 
-###SlideBack有哪些功能？
+## SlideBack有哪些功能？
 
 * setSlideable(boolean) 方法来设置是否支持滑动
     
@@ -12,7 +12,7 @@
 * setShadowResource(resId)设置边缘的阴影的资源
 
 
-##使用
+## 使用
 Add it in your root build.gradle at the end of repositories
 ```javascript
 allprojects {
@@ -28,11 +28,11 @@ dependencies {
 	        compile 'com.github.zouxianbincc:AndroidSlideBack:v1.0.0'
 	}
 ```
-###注意
+## 注意
 在Activity实现中。setContentView时，只能传一个View,不能传一个layoutResID。
 因为 SlideBackAppCompatActivity重写的setContentView(View view);
 所以  setContentView(R.layout.activity_main2) 时，左滑返回是无效的
-## BaseActivity
+### BaseActivity
 ```javascript
 /**
  * 这个是基类。为了统一实现左滑返回，也可以单个Activity中实现，只要继承SlideBackAppCompatActivity,
@@ -61,7 +61,7 @@ public abstract class BaseActivity extends SlideBackAppCompatActivity {
 
 }
 ```
-###允许左滑返回的Activity
+### 允许左滑返回的Activity
 
 ```javascript
 /**
@@ -98,6 +98,6 @@ public class Main3Activity extends BaseActivity {
 }
 ```
 
-##关于作者
+## 关于作者
 
 
