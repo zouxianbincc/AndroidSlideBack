@@ -32,7 +32,7 @@ dependencies {
 在Activity实现中。setContentView时，只能传一个View,不能传一个layoutResID。
 因为 SlideBackAppCompatActivity重写的setContentView(View view);
 所以  setContentView(R.layout.activity_main2) 时，左滑返回是无效的
-### BaseActivity
+## BaseActivity
 ```javascript
 /**
  * 这个是基类。为了统一实现左滑返回，也可以单个Activity中实现，只要继承SlideBackAppCompatActivity,
