@@ -8,7 +8,7 @@ import android.view.View;
 /**
  * 允许左滑返回的Activity
  */
-public class Main3Activity extends BaseActivity {
+public class AllowActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +19,13 @@ public class Main3Activity extends BaseActivity {
         //要想能左滑返回上一个Activity
         //设置setContentView必须是setContentView(view)
         //不能传一个layoutID
-        setContentView(LayoutInflater.from(this).inflate(R.layout.activity_main3,null,false));
+        setContentView(LayoutInflater.from(this).inflate(R.layout.activity_allow,null,false));
 
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Main3Activity.this, Main3Activity.class));
+                startActivity(new Intent(AllowActivity.this, AllowActivity.class));
 
             }
         });

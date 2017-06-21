@@ -12,7 +12,7 @@ import com.zouxianbin.android.slide.SlideBackAppCompatActivity;
  *
  * 警告：在Activity实现中。setContentView时，只能传一个View,不能传一个layoutResID。
  * 因为 SlideBackAppCompatActivity重写的setContentView(View view);
- * 所以  setContentView(R.layout.activity_main2) 时，左滑返回是无效的
+ * 所以  setContentView(R.layout.activity_not_allow) 时，左滑返回是无效的
  */
 public abstract class BaseActivity extends SlideBackAppCompatActivity {
 
