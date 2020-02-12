@@ -401,7 +401,7 @@ public class SlideFrameLayout extends ViewGroup {
         }
 
         int layoutHeight = 0;
-        int maxLayoutHeight = -1;
+        int maxLayoutHeight =0;
         switch (heightMode) {
             case MeasureSpec.EXACTLY:
                 layoutHeight = maxLayoutHeight = heightSize - getPaddingTop() - getPaddingBottom();
@@ -456,6 +456,7 @@ public class SlideFrameLayout extends ViewGroup {
 
             int childHeightSpec;
             if (lp.height == LayoutParams.WRAP_CONTENT) {
+
                 childHeightSpec = MeasureSpec.makeMeasureSpec(maxLayoutHeight, MeasureSpec.AT_MOST);
             } else if (lp.height == LayoutParams.MATCH_PARENT) {
                 childHeightSpec = MeasureSpec.makeMeasureSpec(maxLayoutHeight, MeasureSpec.EXACTLY);
@@ -786,7 +787,7 @@ public class SlideFrameLayout extends ViewGroup {
     protected boolean drawChild(Canvas canvas, View child, long drawingTime) {
         final LayoutParams lp = (LayoutParams) child.getLayoutParams();
         boolean result;
-        final int save = canvas.save(Canvas.CLIP_SAVE_FLAG);
+        final int save = canvas.save();
 
         if (mCanSlide && !lp.slideable && mSlideableView != null) {
             // Clip against the slider; no sense drawing what will immediately be covered.
